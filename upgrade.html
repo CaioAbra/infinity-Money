@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="Upgrade">
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar ">
         <button class="navbar-toggler" type="button" id="sidebarToggle">
             <img src="./src/img/icon/menu_closed.png" alt=""> <!-- Ícone de toggle quadrado -->
         </button>
@@ -41,10 +41,10 @@
             </div>
             <div class="icon ml-auto">
                 <!-- <i class="fas fa-crown"></i> Ícone de coroa -->
-                 <img src="./src/img/icon/crownBasic.png" alt="">
+                <img src="./src/img/icon/crownBasic.png" alt="">
             </div>
         </div>
-        
+
     </nav>
 
     <!-- Sidebar -->
@@ -67,100 +67,78 @@
         </ul>
     </div>
 
-    <div class="container mt-4">
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-12 mb-2">
-                <a href="sinais.html" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Gerar sinais</h5>
-                            <p class="card-text">Sinais básicos</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Card Sinais PRO -->
+            <div class="col-12 mb-4">
+                <div class="card card-pro">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between align-items-center">
+                            Sinais PRO <img src="./src/img/icon/crownPro.svg" alt="Coroa PRO" class="crown-icon">
+                        </h5>
+                        <ul class="card-features">
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span>
+                                Taxa de assertividade 88%
+                            </li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span>
+                                Estratégia anti perda</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span> Sinais de
+                                alavancagem OTC</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span>
+                                Premiações exclusivas via roleta</li>
+                            <li class="legenda">
+                                A cada R$ 300,00 você ganha 1 ticket para girar a roleta.
+                            </li>
 
-                            <div class="d-flex align-items-center">
-                                <span class="badge badge-secondary d-flex align-items-center">
-                                    1435 online <span class="dot bg-success ml-2"></span>
-                                </span>
-                            </div>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span> Histórico
+                                de operações</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaPro.svg" alt=""></span> Sistema
+                                anti loss</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="badge badge-info">233 usuários adquiriram o PRO</span>
                         </div>
-
-
-                        <img src="./src/img/icon/cards/gerarSinais.svg" alt="Icone Gerar Sinais" class="icon-card">
+                        <button class="btn btn-primary btn-block mt-3">Quero ser PRO</button>
                     </div>
-                </a>
+                </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-12 mb-2">
-                <a href="#" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Upgrade</h5>
-                            <p class="card-text">Faça o upgrade da sua conta</p>
+            <!-- Card Sinais Ultimate PRO -->
+            <div class="col-12 mb-4">
+                <div class="card card-ultimate">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-between align-items-center">
+                            Sinais Ultimate PRO <img src="./src/img/icon/crownUlti.svg" alt="Coroa Ultimate PRO"
+                                class="crown-icon">
+                        </h5>
+                        <ul class="card-features">
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Taxa de
+                                assertividade 93%</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span>
+                                Estratégia anti perda</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Sinais
+                                de alavancagem OTC</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span>
+                                Premiações exclusivas via roleta</li>
+                            <li class="legenda">A cada R$ 300,00 você ganha 1 ticket para girar a roleta.</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Acesso
+                                ao material didático</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span>
+                                Histórico de operações</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Sistema
+                                anti loss</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Call
+                                milionária</li>
+                            <li><span class="arrow"><img src="./src/img/icon/cards/setaUlti.svg" alt=""></span> Fórum
+                                Secreto</li>
+                            <li class="legenda">Com os melhores Traders da plataforma</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="badge badge-info">509 usuários adquiriram o Ultimate PRO</span>
                         </div>
-                        <img src="./src/img/icon/cards/upgrade.svg" alt="Icone Upgrade" class="icon-card">
+                        <button class="btn btn-ultimate btn-block mt-3">Quero ser Ultimate PRO</button>
                     </div>
-                </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-12 mb-2">
-                <a href="#" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Top ranking</h5>
-                            <p class="card-text">Traders mais lucrativos</p>
-                        </div>
-                        <img src="./src/img/icon/cards/topTrading.svg" alt="Icone Top Ranking" class="icon-card">
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-12 mb-2">
-                <a href="#" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Histórico</h5>
-                            <p class="card-text">Lucros do último sinal</p>
-                        </div>
-                        <img src="./src/img/icon/cards/historico.svg" alt="Icone Histórico" class="icon-card">
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-12 mb-2">
-                <a href="#" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Treinamentos</h5>
-                            <p class="card-text">Tutoriais e dicas</p>
-                        </div>
-                        <img src="./src/img/icon/cards/treinamentos.svg" alt="Icone Treinamentos" class="icon-card">
-                    </div>
-                </a>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-12 mb-2">
-                <a href="#" class="card card-link p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5 class="card-title">Sistema Anti Loss</h5>
-                            <p class="card-text">Melhor precisão dos sinais</p>
-                        </div>
-                        <img src="./src/img/icon/cards/sistemaAntiLoss.svg" alt="Icone Sistema Anti Loss"
-                            class="icon-card">
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- Botão de ação inferior -->
-        <div class="row">
-            <div class="col-12 text-right">
-                <a href="#" class="btn btn-open mt-3">Abrir Atlas</a>
+                </div>
             </div>
         </div>
     </div>

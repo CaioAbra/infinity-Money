@@ -26,7 +26,7 @@ $color-border: #3F3F3F;
 $color-text: #FFFFFF;
 $green: #BDD700;
 
-@import 'sidebar';
+@import 'sidebar', 'upgrade';
 
 /* Global Styles */
 * {

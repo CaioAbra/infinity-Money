@@ -1,0 +1,126 @@
+/* Variáveis de cor */
+$color-primary: #BDD700;
+$color-secondary: #ADADAD;
+$color-background: rgba(22, 22, 22, 0.8);
+$color-border: #3F3F3F;
+$color-pro: #DAA520;
+$color-ultimate: #72129E;
+$gray30: #5B5B5B;
+
+body.Upgrade {
+    display: block;
+
+    .container {
+        margin-top: 1rem;
+    }
+}
+
+/* Estilo global dos cards */
+.card {
+    backdrop-filter: blur(10px);
+    background-color: $color-background;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid $color-border;
+    color: #fff;
+
+    .card-title {
+        font-family: 'Sora-SemiBold';
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-features {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            font-family: 'Sora-Light';
+            color: $color-secondary;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+
+
+        }
+    }
+
+    .card-footer {
+        font-family: 'Sora-Light';
+        color: $color-secondary;
+        font-size: 12px;
+        margin-top: 10px;
+        padding: 0;
+        background-color: transparent;
+        border-top: none;
+        place-self: center;
+
+
+        .badge-info {
+            background-color: transparent;
+            color: $color-secondary;
+            padding: 0.5rem 1rem;
+            border-radius: 12px;
+            border: 1px solid $color-border;
+            place-self: center;
+
+        }
+    }
+
+    .btn-block {
+        font-family: 'Sora-SemiBold';
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        color: #161616;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Estilo específico para o card PRO */
+.card-pro {
+    .arrow {
+        color: $color-pro;
+        margin-right: 10px;
+    }
+
+    .btn {
+        background-color: $color-pro;
+        border: none;
+
+        &:hover {
+            background-color: darken($color-pro, 10%);
+        }
+    }
+}
+
+/* Estilo específico para o card Ultimate PRO */
+.card-ultimate {
+    .arrow {
+        color: $color-ultimate;
+        margin-right: 10px;
+    }
+
+    .btn-ultimate {
+        background-color: $color-ultimate;
+        border: none;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: darken($color-ultimate, 10%);
+        }
+    }
+}
+
+/* Coroas */
+.crown-icon {
+    width: 20px;
+    height: 20px;
+}
+
+li.legenda {
+    color: $gray30 !important;
+    font-family: 'Sora-Light' !important;
+    font-size: 10px !important;
+}

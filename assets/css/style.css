@@ -136,6 +136,106 @@
   height: 20px;
 }
 
+/* Variáveis de cor */
+body.Upgrade {
+  display: block;
+}
+body.Upgrade .container {
+  margin-top: 1rem;
+}
+
+/* Estilo global dos cards */
+.card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 22, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #3F3F3F;
+  color: #fff;
+}
+.card .card-title {
+  font-family: "Sora-SemiBold";
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-features {
+  list-style: none;
+  padding-left: 0;
+}
+.card .card-features li {
+  font-family: "Sora-Light";
+  color: #ADADAD;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.card .card-footer {
+  font-family: "Sora-Light";
+  color: #ADADAD;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0;
+  background-color: transparent;
+  border-top: none;
+  place-self: center;
+}
+.card .card-footer .badge-info {
+  background-color: transparent;
+  color: #ADADAD;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #3F3F3F;
+  place-self: center;
+}
+.card .btn-block {
+  font-family: "Sora-SemiBold";
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #161616;
+  transition: all 0.3s ease;
+}
+
+/* Estilo específico para o card PRO */
+.card-pro .arrow {
+  color: #DAA520;
+  margin-right: 10px;
+}
+.card-pro .btn {
+  background-color: #DAA520;
+  border: none;
+}
+.card-pro .btn:hover {
+  background-color: #ae8319;
+}
+
+/* Estilo específico para o card Ultimate PRO */
+.card-ultimate .arrow {
+  color: #72129E;
+  margin-right: 10px;
+}
+.card-ultimate .btn-ultimate {
+  background-color: #72129E;
+  border: none;
+  color: #FFFFFF;
+}
+.card-ultimate .btn-ultimate:hover {
+  background-color: #510d70;
+}
+
+/* Coroas */
+.crown-icon {
+  width: 20px;
+  height: 20px;
+}
+
+li.legenda {
+  color: #5B5B5B !important;
+  font-family: "Sora-Light" !important;
+  font-size: 10px !important;
+}
+
 /* Global Styles */
 * {
   box-sizing: border-box;
