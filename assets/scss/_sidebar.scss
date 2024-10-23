@@ -1,3 +1,7 @@
+nav {
+    background: transparent;
+}
+
 /* Sidebar */
 .sidebar {
     width: 250px;
@@ -9,14 +13,14 @@
     z-index: 1000;
     background: $color-background;
     /* Fundo escuro translúcido */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     /* Desfoque de fundo */
     transition: all 0.5s ease;
     /* Suaviza a transição */
     // margin-top: 60px;
     /* Espaço para alinhar com a navbar */
     overflow-x: hidden;
-    border: 1px solid #3F3F3F;
+    border: 1px solid $color-border;
     border-top-right-radius: 6px;
     z-index: 9999;
 }
@@ -65,7 +69,7 @@
 }
 
 .sidebar-header button {
-    border: 1px solid $color-text;
+    border: 1px solid $color-border;
     background: none;
     margin-right: 1rem;
     /* Espaçamento à esquerda do logotipo */
@@ -74,7 +78,10 @@
 
 /* Ícones de navbar */
 .navbar-toggler {
-    border: 1px solid $color-text;
+    border: .5px solid $color-border;
+    border-radius: 6px;
+    padding: 6px;
+    background: rgba(22, 22, 22, 0.8);
 }
 
 .navbar-toggler img {
@@ -85,26 +92,27 @@
 /* Estilos do Item na Navbar */
 .status-badge {
     display: inline-flex;
-    // background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(22, 22, 22, 0.8);
     /* Fundo translúcido */
-    border-radius: 8px;
-    padding: 5px 10px;
-    color: #fff;
-    border: 1px solid #3F3F3F;
+    border-radius: 6px;
+    padding: 5px 10px;  
+    border: 1px solid $color-border;
 
     .text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-right: 1px solid;
+        border-right: 1px solid $color-border;
         padding-right: .3rem;
+        color: $color-text;
+        font-family: 'Sora-Light';
     }
 }
 
 
 .status-badge .badge {
-    font-size: 14px;
+    font-size: 8px;
     /* Ajusta o tamanho do texto 'básico' */
     background-color: transparent;
     /* Remove a cor de fundo padrão do badge */
@@ -114,12 +122,12 @@
 }
 
 .status-badge small {
-    font-size: 12px;
+    font-size: 6px;
     font-family: 'Sora-Light';
-    color: #adadad;
+    color: $color-secondary;
 }
 
 .icon img {
-    width: 24px;
-    height: 20px;
+    width: 12px;
+    height: 10px;
 }

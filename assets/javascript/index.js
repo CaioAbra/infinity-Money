@@ -28,10 +28,10 @@ function iniciarFases() {
         $('#fase3').show(); // Exibe fase 3
     }, 6000); // 3 segundos depois da fase 2
 
-    setTimeout(function () {
-        $('#fase3').hide(); // Esconde fase 3
-        $('#fase4').show(); // Exibe fase 4
-    }, 9000); // 3 segundos depois da fase 3
+    // setTimeout(function () {
+    //     $('#fase3').hide(); // Esconde fase 3
+    //     $('#fase4').show(); // Exibe fase 4
+    // }, 9000); // 3 segundos depois da fase 3
 }
 
 // Iniciar fases assim que a página carregar
@@ -40,6 +40,6 @@ $(document).ready(function () {
 });
 
 // Exibe o gráfico quando "Abrir Atlas" for clicado
-$('#abrirAtlas').on('click', function () {
-    $('#fase4').show(); // Exibe a fase 4
-});
+// $('#abrirAtlas').on('click', function () {
+//     $('#fase4').show(); // Exibe a fase 4
+// });
