@@ -17,19 +17,21 @@ body.Upgrade {
 
 /* Estilo global dos cards */
 .card {
-    backdrop-filter: blur(10px);
-    background-color: $color-background;
-    border-radius: 12px;
-    padding: 20px;
-    border: 1px solid $color-border;
-    color: #fff;
+    // backdrop-filter: blur(10px);
+    // background-color: $color-background;
+    // border-radius: 12px;
+    // padding: 20px;
+    // border: 1px solid $color-border;
+    // color: #fff;
 
-    .card-title {
-        font-family: 'Sora-SemiBold';
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
+    &.card-pro, &.card-ultimate{
+        .card-title {
+            // font-family: 'Sora-SemiBold';
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     .card-features {
@@ -64,6 +66,7 @@ body.Upgrade {
             border-radius: 12px;
             border: 1px solid $color-border;
             place-self: center;
+            font-weight: 300;
 
         }
     }

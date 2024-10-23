@@ -1,5 +1,9 @@
 nav {
     background: transparent;
+
+    .logo {
+        width: 3.5rem;
+    }
 }
 
 /* Sidebar */
@@ -46,6 +50,7 @@ nav {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
+    font-family: 'Sora-Light';
     /* Transição de cor ao passar o mouse */
 }
 
@@ -85,8 +90,8 @@ nav {
 }
 
 .navbar-toggler img {
-    width: 14px;
-    height: 14px;
+    width: 22px;
+    height: 22px;
 }
 
 /* Estilos do Item na Navbar */
@@ -95,7 +100,7 @@ nav {
     background: rgba(22, 22, 22, 0.8);
     /* Fundo translúcido */
     border-radius: 6px;
-    padding: 5px 10px;  
+    padding: 5px 10px;
     border: 1px solid $color-border;
 
     .text {
@@ -130,4 +135,16 @@ nav {
 .icon img {
     width: 12px;
     height: 10px;
+}
+
+#sidebarClose {
+    border: 0.5px solid #3F3F3F;
+    border-radius: 6px;
+    padding: 6px;
+    background: rgba(22, 22, 22, 0.8);
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
 }
