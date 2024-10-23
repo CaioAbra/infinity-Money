@@ -123,7 +123,7 @@ nav .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #3F3F3F;
+  border-right: 0.5px solid #3F3F3F;
   padding-right: 0.3rem;
   color: #FFFFFF;
   font-family: "Sora-Light";
@@ -136,6 +136,7 @@ nav .logo {
   /* Remove a cor de fundo padrão do badge */
   color: #FFFFFF;
   font-family: "Sora-Light";
+  font-weight: 300;
   padding-bottom: 0;
   /* Fonte personalizada */
 }
@@ -144,11 +145,12 @@ nav .logo {
   font-size: 10px;
   font-family: "Sora-Light";
   color: #ADADAD;
+  font-weight: 300;
 }
 
 .icon img {
-  width: 26px;
-  height: 22px;
+  width: 24px;
+  height: 20px;
 }
 
 #sidebarClose {
