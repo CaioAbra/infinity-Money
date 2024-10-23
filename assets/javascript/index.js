@@ -12,3 +12,5 @@ $('#sidebarClose').on('click', function () {
     $('#sidebarToggle').css('opacity', '1');
     $('.navbar-brand').css('opacity', '1'); 
 });
+
+
