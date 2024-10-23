@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Sora-Medium";
+  src: url("../fonts/Sora-Medium.ttf");
+}
+@font-face {
+  font-family: "Sora-Light";
+  src: url("../fonts/Sora-Light.ttf");
+}
+@font-face {
+  font-family: "Sora-Regular";
+  src: url("../fonts/Sora-Regular.ttf");
+}
+@font-face {
+  font-family: "Sora-SemiBold";
+  src: url("../fonts/Sora-SemiBold.ttf");
+}
+/* Variáveis de Cores */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../src/img/BG-Login.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Sora-Medium";
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+}
+
+.login-card {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(22, 22, 22, 0.8);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  border: 1px solid #3F3F3F;
+}
+
+.logo img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Sora-Regular";
+}
+
+/* Estilos do input */
+.form-control {
+  background-color: rgba(12, 12, 12, 0.5);
+  border: none;
+  color: #ADADAD;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #3F3F3F;
+  text-align: center;
+}
+
+.form-control::placeholder {
+  color: #ADADAD;
+  font-family: "Sora-Light";
+  font-size: 12px !important;
+}
+
+/* Personalizando o checkbox */
+.form-check {
+  text-align: left;
+  padding-left: 0;
+}
+
+.form-check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-check-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #ADADAD;
+  font-family: "Sora-Regular";
+}
+
+.form-check-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: rgba(12, 12, 12, 0.5);
+  border: 1px solid #3F3F3F;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.form-check-input:checked + .form-check-label::before {
+  background-color: #BDD700;
+  border-color: #90a400;
+}
+
+.form-check-label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-check-input:checked + .form-check-label::after {
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: #BDD700;
+  border: none;
+  font-family: "Sora-SemiBold";
+  font-size: 16px;
+  margin-top: 10px;
+  color: #161616;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #90a400;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(192, 255, 10, 0.6);
+}
+
+/* Animação de "pulse" no botão */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(192, 255, 10, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(192, 255, 10, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(192, 255, 10, 0.5);
+  }
+}
+.btn-primary:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Estilos do link "Criar uma conta" */
+.signup-link p {
+  color: #ADADAD;
+  font-family: "Sora-Regular";
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  font-family: "Sora-Regular";
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  color: #BDD700;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
