@@ -39,7 +39,18 @@ $(document).ready(function () {
     iniciarFases();
 });
 
-// Exibe o gráfico quando "Abrir Atlas" for clicado
-// $('#abrirAtlas').on('click', function () {
-//     $('#fase4').show(); // Exibe a fase 4
-// });
+$(document).ready(function () {
+    $('.btn-open').on('click', function () {
+        var atlasContainer = $('#atlasContainer');
+        var isHidden = atlasContainer.is(':hidden');
+
+        // Alternar entre abrir e fechar
+        if (isHidden) {
+            atlasContainer.slideDown(); // Exibe a imagem do gráfico
+            $(this).text('Fechar'); // Muda o texto do botão para "Fechar"
+        } else {
+            atlasContainer.slideUp(); // Esconde a imagem do gráfico
+            $(this).text('Abrir Atlas'); // Muda o texto do botão de volta para "Abrir Atlas"
+        }
+    });
+});
