@@ -41,10 +41,18 @@ body {
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    background-image: url('./../../src/img/BG-home.png');
+    background-image: url('./../../src/img/BG-TelaInicial.png');
     background-size: cover;
     background-position: center;
     font-family: 'Sora-Medium';
+
+    &.sinais{
+        background-image: url('./../../src/img/BG-Sinais.png');  
+    }
+
+    &.Upgrade{
+        background-image: url('./../../src/img/BG-Upgrade.png');  
+    }
 }
 
 .card {
