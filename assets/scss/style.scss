@@ -54,6 +54,8 @@ body {
     border-radius: 8px;
     width: 100%;
     border: 1px solid $color-border;
+    min-height: 115px;
+    justify-content: center;
 
     h5 {
         color: $color-text;
