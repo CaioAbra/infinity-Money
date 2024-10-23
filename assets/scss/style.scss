@@ -36,7 +36,8 @@ $green: #BDD700;
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
