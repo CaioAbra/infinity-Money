@@ -70,6 +70,23 @@ nav {
         color: $color-secondary;
         font-size: 10px;
     }
+
+    .card-currency,
+    .card-details {
+        color: $color-secondary;
+        font-family: 'Sora-Light';
+
+    }
+
+    .time {
+        color: $color-text;
+        font-family: 'Sora-Light';
+    }
+
+    .btn-Up {
+        width: fit-content;
+        align-self: center;
+    }
 }
 
 .dot {
@@ -91,6 +108,7 @@ nav {
     font-family: 'Sora-Light';
 }
 
+
 .btn-open {
     color: $color-text;
     border: 1px solid $color-primary;
@@ -100,8 +118,52 @@ nav {
     border-radius: 6px;
     transition: all .3s ease;
 
+
     &:hover {
         background: $color-primary;
+    }
+}
+
+body:not(.home) {
+    .btn-open {
+        position: absolute;
+        bottom: 4rem;
+        right: 1rem;
+    }
+
+    .badge.badge-secondary {
+        width: fit-content;
+        align-self: center;
+    }
+}
+
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    /* Borda clara */
+    border-top: 4px solid $color-primary;
+    /* Borda superior verde */
+    border-radius: 50%;
+    /* Para transformar em círculo */
+    width: 40px;
+    /* Largura do loader */
+    height: 40px;
+    /* Altura do loader */
+    animation: spin 1s linear infinite;
+    /* Animação de rotação infinita */
+    align-self: center;
+    margin-top: 1rem;
+}
+
+/* Animação de rotação */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* Inicia a rotação em 0 graus */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Termina a rotação em 360 graus */
     }
 }
 

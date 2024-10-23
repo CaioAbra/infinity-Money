@@ -177,6 +177,19 @@ nav {
   color: #ADADAD;
   font-size: 10px;
 }
+.card .card-currency,
+.card .card-details {
+  color: #ADADAD;
+  font-family: "Sora-Light";
+}
+.card .time {
+  color: #FFFFFF;
+  font-family: "Sora-Light";
+}
+.card .btn-Up {
+  width: fit-content;
+  align-self: center;
+}
 
 .dot {
   display: inline-block;
@@ -210,6 +223,44 @@ nav {
   background: #BDD700;
 }
 
+body:not(.home) .btn-open {
+  position: absolute;
+  bottom: 4rem;
+  right: 1rem;
+}
+body:not(.home) .badge.badge-secondary {
+  width: fit-content;
+  align-self: center;
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  /* Borda clara */
+  border-top: 4px solid #BDD700;
+  /* Borda superior verde */
+  border-radius: 50%;
+  /* Para transformar em círculo */
+  width: 40px;
+  /* Largura do loader */
+  height: 40px;
+  /* Altura do loader */
+  animation: spin 1s linear infinite;
+  /* Animação de rotação infinita */
+  align-self: center;
+  margin-top: 1rem;
+}
+
+/* Animação de rotação */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    /* Inicia a rotação em 0 graus */
+  }
+  100% {
+    transform: rotate(360deg);
+    /* Termina a rotação em 360 graus */
+  }
+}
 /* Responsividade */
 @media (max-width: 576px) {
   .card {
