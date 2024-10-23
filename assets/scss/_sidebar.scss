@@ -1,0 +1,125 @@
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Inicialmente fora da tela */
+    height: 100%;
+    z-index: 1000;
+    background: $color-background;
+    /* Fundo escuro translúcido */
+    backdrop-filter: blur(10px);
+    /* Desfoque de fundo */
+    transition: all 0.5s ease;
+    /* Suaviza a transição */
+    // margin-top: 60px;
+    /* Espaço para alinhar com a navbar */
+    overflow-x: hidden;
+    border: 1px solid #3F3F3F;
+    border-top-right-radius: 6px;
+    z-index: 9999;
+}
+
+.sidebar.active {
+    left: 0;
+    /* Quando ativado, a sidebar entra na tela */
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    color: $color-text;
+    /* Cor do texto e links */
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    /* Transição de cor ao passar o mouse */
+}
+
+.sidebar ul li a.active {
+    color: $color-primary;
+    text-decoration: underline;
+    /* Cor diferente para o link ativo */
+}
+
+.sidebar ul li a:hover {
+    color: $color-primary;
+    text-decoration: underline;
+}
+
+/* Sidebar header com o botão de fechar */
+.sidebar-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    // border-bottom: 1px solid #444;
+}
+
+.sidebar-header button {
+    border: 1px solid $color-text;
+    background: none;
+    margin-right: 1rem;
+    /* Espaçamento à esquerda do logotipo */
+
+}
+
+/* Ícones de navbar */
+.navbar-toggler {
+    border: 1px solid $color-text;
+}
+
+.navbar-toggler img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Estilos do Item na Navbar */
+.status-badge {
+    display: inline-flex;
+    // background-color: rgba(255, 255, 255, 0.1);
+    /* Fundo translúcido */
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #3F3F3F;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid;
+        padding-right: .3rem;
+    }
+}
+
+
+.status-badge .badge {
+    font-size: 14px;
+    /* Ajusta o tamanho do texto 'básico' */
+    background-color: transparent;
+    /* Remove a cor de fundo padrão do badge */
+    color: $color-text;
+    font-family: 'Sora-Light';
+    /* Fonte personalizada */
+}
+
+.status-badge small {
+    font-size: 12px;
+    font-family: 'Sora-Light';
+    color: #adadad;
+}
+
+.icon img {
+    width: 24px;
+    height: 20px;
+}

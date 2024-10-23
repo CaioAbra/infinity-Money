@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caio Matheus dos Santos Abra">
-    <title>Login</title>
+    <title>Home</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./src/img/iconHead.ico" type="image/x-icon">
@@ -26,26 +26,143 @@
 
 <body>
 
-    <div class="login-container">
-        <div class="card login-card">
-            <div class="card-body">
-                <div class="logo text-center">
-                    <img src="./src/img/loop.png" alt="Logotipo do Trader">
-                </div>
-                <h2 class="text-center">Faça o Login na sua conta</h2>
-                <form action="" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="trader-id" placeholder="ID do Trader" required>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <button class="navbar-toggler" type="button" id="sidebarToggle">
+            <img src="./src/img/icon/menu_closed.png" alt=""> <!-- Ícone de toggle quadrado -->
+        </button>
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="src/img/loop.png" alt="Logotipo" style="width: 40px;">
+        </a>
+        <div class="navbar-text status-badge d-flex align-items-center ">
+            <div class="text mr-2">
+                <span class="badge badge-warning">básico</span>
+                <small class="">30 dias</small>
+            </div>
+            <div class="icon ml-auto">
+                <!-- <i class="fas fa-crown"></i> Ícone de coroa -->
+                 <img src="./src/img/icon/crownBasic.png" alt="">
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header d-flex justify-content-between align-items-center">
+            <img src="src/img/loop.png" alt="Logotipo" style="width: 40px;">
+
+            <button class="btn btn-outline-light" id="sidebarClose">
+                <img src="./src/img/icon/menu_open.png" alt="" style="width: 14px; height: 14px;">
+                <!-- Ícone de fechar -->
+            </button>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Upgrade</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Treinamentos</a></li>
+            <li><a href="#">Sistema Anti Loss</a></li>
+            <li><a href="#">Sair</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Gerar sinais</h5>
+                            <p class="card-text">Sinais básicos</p>
+
+                            <div class="d-flex align-items-center">
+                                <span class="badge badge-secondary d-flex align-items-center">
+                                    1435 online <span class="dot bg-success ml-2"></span>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <img src="./src/img/icon/cards/gerarSinais.svg" alt="Icone Gerar Sinais" class="icon-card">
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="lembrar">
-                        <label class="form-check-label" for="lembrar">Lembrar-me</label>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Upgrade</h5>
+                            <p class="card-text">Faça o upgrade da sua conta</p>
+                        </div>
+                        <img src="./src/img/icon/cards/upgrade.svg" alt="Icone Upgrade" class="icon-card">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Acessar conta</button>
-                </form>
-                <div class="signup-link text-center mt-3">
-                    <p>Não tem uma conta? <a href="#">Criar uma</a></p>
-                </div>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Top ranking</h5>
+                            <p class="card-text">Traders mais lucrativos</p>
+                        </div>
+                        <img src="./src/img/icon/cards/topTrading.svg" alt="Icone Top Ranking" class="icon-card">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Histórico</h5>
+                            <p class="card-text">Lucros do último sinal</p>
+                        </div>
+                        <img src="./src/img/icon/cards/historico.svg" alt="Icone Histórico" class="icon-card">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Treinamentos</h5>
+                            <p class="card-text">Tutoriais e dicas</p>
+                        </div>
+                        <img src="./src/img/icon/cards/treinamentos.svg" alt="Icone Treinamentos" class="icon-card">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 mb-2">
+                <a href="#" class="card card-link p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Sistema Anti Loss</h5>
+                            <p class="card-text">Melhor precisão dos sinais</p>
+                        </div>
+                        <img src="./src/img/icon/cards/sistemaAntiLoss.svg" alt="Icone Sistema Anti Loss"
+                            class="icon-card">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Botão de ação inferior -->
+        <div class="row">
+            <div class="col-12 text-right">
+                <a href="#" class="btn btn-open mt-3">Abrir Atlas</a>
             </div>
         </div>
     </div>

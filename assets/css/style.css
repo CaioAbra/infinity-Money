@@ -16,6 +16,126 @@
   src: url("../fonts/Sora-SemiBold.ttf");
 }
 /* Variáveis de Cores */
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Inicialmente fora da tela */
+  height: 100%;
+  z-index: 1000;
+  background: rgba(22, 22, 22, 0.8);
+  /* Fundo escuro translúcido */
+  backdrop-filter: blur(10px);
+  /* Desfoque de fundo */
+  transition: all 0.5s ease;
+  /* Suaviza a transição */
+  /* Espaço para alinhar com a navbar */
+  overflow-x: hidden;
+  border: 1px solid #3F3F3F;
+  border-top-right-radius: 6px;
+  z-index: 9999;
+}
+
+.sidebar.active {
+  left: 0;
+  /* Quando ativado, a sidebar entra na tela */
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 5px 10px;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #FFFFFF;
+  /* Cor do texto e links */
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  /* Transição de cor ao passar o mouse */
+}
+
+.sidebar ul li a.active {
+  color: #BDD700;
+  text-decoration: underline;
+  /* Cor diferente para o link ativo */
+}
+
+.sidebar ul li a:hover {
+  color: #BDD700;
+  text-decoration: underline;
+}
+
+/* Sidebar header com o botão de fechar */
+.sidebar-header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-header button {
+  border: 1px solid #FFFFFF;
+  background: none;
+  margin-right: 1rem;
+  /* Espaçamento à esquerda do logotipo */
+}
+
+/* Ícones de navbar */
+.navbar-toggler {
+  border: 1px solid #FFFFFF;
+}
+
+.navbar-toggler img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Estilos do Item na Navbar */
+.status-badge {
+  display: inline-flex;
+  /* Fundo translúcido */
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #fff;
+  border: 1px solid #3F3F3F;
+}
+.status-badge .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid;
+  padding-right: 0.3rem;
+}
+
+.status-badge .badge {
+  font-size: 14px;
+  /* Ajusta o tamanho do texto 'básico' */
+  background-color: transparent;
+  /* Remove a cor de fundo padrão do badge */
+  color: #FFFFFF;
+  font-family: "Sora-Light";
+  /* Fonte personalizada */
+}
+
+.status-badge small {
+  font-size: 12px;
+  font-family: "Sora-Light";
+  color: #adadad;
+}
+
+.icon img {
+  width: 24px;
+  height: 20px;
+}
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -28,175 +148,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./../../src/img/BG-Login.png");
+  background-image: url("./../../src/img/BG-home.png");
   background-size: cover;
   background-position: center;
   font-family: "Sora-Medium";
 }
 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 15px;
+nav {
+  background: transparent;
 }
 
-.login-card {
+.card {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background-color: rgba(22, 22, 22, 0.8);
   border-radius: 8px;
   width: 100%;
-  max-width: 350px;
-  text-align: center;
   border: 1px solid #3F3F3F;
 }
-
-.logo img {
-  width: 60px;
-  margin-bottom: 20px;
-}
-
-h2 {
+.card h5 {
   color: #FFFFFF;
-  font-size: 18px;
-  margin-bottom: 20px;
   font-family: "Sora-Regular";
+  margin-bottom: 0;
+  font-size: 1rem;
 }
-
-/* Estilos do input */
-.form-control {
-  background-color: rgba(12, 12, 12, 0.5);
-  border: none;
+.card p.card-text {
+  font-family: "Sora-Light";
   color: #ADADAD;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #3F3F3F;
-  text-align: center;
+  font-size: 10px;
 }
 
-.form-control::placeholder {
+.dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #BDD700;
+  /* Cor verde para indicar "online" */
+}
+
+.badge.badge-secondary {
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid #3F3F3F;
+  padding: 8px 12px;
+  font-size: 6px;
   color: #ADADAD;
   font-family: "Sora-Light";
-  font-size: 12px !important;
 }
 
-/* Personalizando o checkbox */
-.form-check {
-  text-align: left;
-  padding-left: 0;
-}
-
-.form-check-input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.form-check-label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  color: #ADADAD;
-  font-family: "Sora-Regular";
-}
-
-.form-check-label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  background-color: rgba(12, 12, 12, 0.5);
-  border: 1px solid #3F3F3F;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.form-check-input:checked + .form-check-label::before {
-  background-color: #BDD700;
-  border-color: #90a400;
-}
-
-.form-check-label::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.form-check-input:checked + .form-check-label::after {
-  opacity: 1;
-}
-
-.btn-primary {
-  background-color: #BDD700;
-  border: none;
-  font-family: "Sora-SemiBold";
-  font-size: 16px;
-  margin-top: 10px;
-  color: #161616;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.btn-primary:hover {
-  background-color: #90a400;
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(192, 255, 10, 0.6);
-}
-
-/* Animação de "pulse" no botão */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(192, 255, 10, 0.5);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(192, 255, 10, 0.6);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(192, 255, 10, 0.5);
-  }
-}
-.btn-primary:hover {
-  animation: pulse 1s infinite;
-}
-
-/* Estilos do link "Criar uma conta" */
-.signup-link p {
-  color: #ADADAD;
-  font-family: "Sora-Regular";
-}
-
-.signup-link a {
-  text-decoration: none;
+.btn-open {
   color: #FFFFFF;
+  border: 1px solid #BDD700;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: "Sora-Light";
+  border-radius: 6px;
   transition: all 0.3s ease;
-  font-family: "Sora-Regular";
 }
-
-.signup-link a:hover {
-  text-decoration: underline;
-  color: #BDD700;
+.btn-open:hover {
+  background: #BDD700;
 }
 
 /* Responsividade */
 @media (max-width: 576px) {
-  .login-card {
+  .card {
     padding: 20px;
   }
 }
