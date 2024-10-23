@@ -20,7 +20,7 @@ nav {
   background: transparent;
 }
 nav .logo {
-  width: 5rem;
+  width: 3.5rem;
 }
 
 /* Sidebar */
@@ -104,8 +104,8 @@ nav .logo {
 }
 
 .navbar-toggler img {
-  width: 38px;
-  height: 38px;
+  width: 22px;
+  height: 22px;
 }
 
 /* Estilos do Item na Navbar */
@@ -114,7 +114,7 @@ nav .logo {
   background: rgba(22, 22, 22, 0.8);
   /* Fundo translúcido */
   border-radius: 6px;
-  padding: 5px 10px;
+  padding: 0px 10px;
   border: 1px solid #3F3F3F;
 }
 .status-badge .text {
@@ -135,6 +135,7 @@ nav .logo {
   /* Remove a cor de fundo padrão do badge */
   color: #FFFFFF;
   font-family: "Sora-Light";
+  padding-bottom: 0;
   /* Fonte personalizada */
 }
 
@@ -145,8 +146,8 @@ nav .logo {
 }
 
 .icon img {
-  width: 24px;
-  height: 20px;
+  width: 12px;
+  height: 10px;
 }
 
 #sidebarClose {
@@ -156,8 +157,8 @@ nav .logo {
   background: rgba(22, 22, 22, 0.8);
 }
 #sidebarClose img {
-  width: 38px;
-  height: 38px;
+  width: 22px;
+  height: 22px;
 }
 
 /* Variáveis de cor */
