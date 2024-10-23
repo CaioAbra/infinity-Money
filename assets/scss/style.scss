@@ -46,12 +46,12 @@ body {
     background-position: center;
     font-family: 'Sora-Medium';
 
-    &.sinais{
-        background-image: url('./../../src/img/BG-Sinais.png');  
+    &.sinais {
+        background-image: url('./../../src/img/BG-Sinais.png');
     }
 
-    &.Upgrade{
-        background-image: url('./../../src/img/BG-Upgrade.png');  
+    &.Upgrade {
+        background-image: url('./../../src/img/BG-Upgrade.png');
     }
 }
 
@@ -80,19 +80,21 @@ body {
 
     }
 
-    .card-currency,
     .card-details {
         color: $color-secondary;
         font-family: 'Sora-Light';
 
     }
 
-    .card-currency{
+    .card-currency {
         margin-top: 16px;
         margin-bottom: 6px;
+        color: $color-text;
+        font-family: 'Sora-Regular';
+        font-weight: 400;
     }
 
-    .text-time{
+    .text-time {
         color: $color-secondary;
         font-family: 'Sora-Light';
     }

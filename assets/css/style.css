@@ -301,7 +301,6 @@ body.Upgrade {
   font-size: 14px;
   margin-bottom: 6px;
 }
-.card .card-currency,
 .card .card-details {
   color: #ADADAD;
   font-family: "Sora-Light";
@@ -309,6 +308,9 @@ body.Upgrade {
 .card .card-currency {
   margin-top: 16px;
   margin-bottom: 6px;
+  color: #FFFFFF;
+  font-family: "Sora-Regular";
+  font-weight: 400;
 }
 .card .text-time {
   color: #ADADAD;
