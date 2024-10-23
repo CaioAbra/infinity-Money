@@ -38,9 +38,9 @@ body {
     padding: 0;
     min-height: 100vh;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     background-image: url('./../../src/img/BG-home.png');
     background-size: cover;
     background-position: center;
@@ -58,14 +58,16 @@ body {
     h5 {
         color: $color-text;
         font-family: 'Sora-Regular';
-        margin-bottom: 0;
-        font-size: 1rem;
+        margin-bottom: 6px;
+        font-size: 20px;
     }
 
     p.card-text {
         font-family: 'Sora-Light';
         color: $color-secondary;
-        font-size: 10px;
+        font-size: 12px;
+        margin-bottom: 6px;
+
     }
 
     .card-currency,
@@ -118,6 +120,7 @@ body {
     font-size: 10px;
     color: $color-secondary;
     font-family: 'Sora-Light';
+    font-weight: 300;
 }
 
 

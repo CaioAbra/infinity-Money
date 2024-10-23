@@ -20,7 +20,7 @@ nav {
   background: transparent;
 }
 nav .logo {
-  width: 3.5rem;
+  width: 5rem;
 }
 
 /* Sidebar */
@@ -104,8 +104,8 @@ nav .logo {
 }
 
 .navbar-toggler img {
-  width: 26px;
-  height: 26px;
+  width: 38px;
+  height: 38px;
 }
 
 /* Estilos do Item na Navbar */
@@ -156,8 +156,8 @@ nav .logo {
   background: rgba(22, 22, 22, 0.8);
 }
 #sidebarClose img {
-  width: 22px;
-  height: 22px;
+  width: 38px;
+  height: 38px;
 }
 
 /* Variáveis de cor */
@@ -262,9 +262,6 @@ body {
   padding: 0;
   min-height: 100vh;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("./../../src/img/BG-home.png");
   background-size: cover;
   background-position: center;
@@ -282,13 +279,14 @@ body {
 .card h5 {
   color: #FFFFFF;
   font-family: "Sora-Regular";
-  margin-bottom: 0;
-  font-size: 1rem;
+  margin-bottom: 6px;
+  font-size: 20px;
 }
 .card p.card-text {
   font-family: "Sora-Light";
   color: #ADADAD;
-  font-size: 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
 }
 .card .card-currency,
 .card .card-details {
@@ -334,6 +332,7 @@ body {
   font-size: 10px;
   color: #ADADAD;
   font-family: "Sora-Light";
+  font-weight: 300;
 }
 
 .btn-open {
