@@ -161,6 +161,12 @@ nav .logo {
   height: 22px;
 }
 
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Variáveis de cor */
 body.Upgrade {
   display: block;
@@ -280,13 +286,13 @@ body {
 .card h5 {
   color: #FFFFFF;
   font-family: "Sora-Regular";
-  margin-bottom: 6px;
-  font-size: 20px;
+  margin-bottom: 4px;
+  font-size: 22px;
 }
 .card p.card-text {
   font-family: "Sora-Light";
   color: #ADADAD;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .card .card-currency,
@@ -329,7 +335,7 @@ body {
   background-color: transparent;
   border-radius: 12px;
   border: 1px solid #3F3F3F;
-  padding: 8px 12px;
+  padding: 6px;
   font-size: 10px;
   color: #ADADAD;
   font-family: "Sora-Light";

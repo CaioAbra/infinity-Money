@@ -58,14 +58,14 @@ body {
     h5 {
         color: $color-text;
         font-family: 'Sora-Regular';
-        margin-bottom: 6px;
-        font-size: 20px;
+        margin-bottom: 4px;
+        font-size: 22px;
     }
 
     p.card-text {
         font-family: 'Sora-Light';
         color: $color-secondary;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 6px;
 
     }
@@ -116,7 +116,7 @@ body {
     background-color: transparent;
     border-radius: 12px;
     border: 1px solid $color-border;
-    padding: 8px 12px;
+    padding: 6px;
     font-size: 10px;
     color: $color-secondary;
     font-family: 'Sora-Light';
