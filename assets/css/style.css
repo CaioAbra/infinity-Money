@@ -489,6 +489,11 @@ body:not(.home) .badge.badge-secondary {
     font-size: 10px;
   }
 }
+.icon-card {
+  width: 51px;
+  height: 51px;
+}
+
 /* Animação de rotação */
 @keyframes spin {
   0% {
