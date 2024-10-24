@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Matheus dos Santos Abra">
+    <title>Top Ranking</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./src/img/iconHead.ico" type="image/x-icon">
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+    <!-- Bootstrap and Font Awesome -->
+    <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Unificação dos estilos SCSS compilados -->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Compilado de todos os arquivos SCSS -->
+
+    <!-- Swiper CSS (separado por ser uma biblioteca externa) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="home">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button class="navbar-toggler" type="button" id="sidebarToggle">
+            <img src="./src/img/icon/menu_closed.png" alt=""> <!-- Ícone de toggle quadrado -->
+        </button>
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="src/img/loop.png" alt="Logotipo">
+        </a>
+        <div class="navbar-text status-badge d-flex align-items-center ">
+            <div class="text mr-2">
+                <span class="badge badge-warning">básico</span>
+                <small class="">30 dias</small>
+            </div>
+            <div class="icon ml-auto">
+                <!-- <i class="fas fa-crown"></i> Ícone de coroa -->
+                <img src="./src/img/icon/crownBasic.svg" alt="">
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header d-flex justify-content-between align-items-center">
+            <img src="src/img/loop.png" alt="Logotipo" style="width: 40px;">
+
+            <button class="btn btn-outline-light" id="sidebarClose">
+                <img src="./src/img/icon/menu_open.png" alt="" class="">
+                <!-- Ícone de fechar -->
+            </button>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upgrade.html">Upgrade</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+            <li><a href="treinamento.html">Treinamentos</a></li>
+            <li><a href="antiLoss.html">Sistema Anti Loss</a></li>
+            <li><a href="javascript:void(0);">Sair</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="card p-4 ranking-card">
+                    <div class="card-header ranking-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="ranking-title">Top ranking</h5>
+                            <p class="ranking-subtitle mb-0">Traders mais lucrativos</p>
+                        </div>
+                        <div class="ranking-icon">
+                            <img src="./src/img/icon/topRanking.png" alt="Ícone Ranking">
+                        </div>
+                    </div>
+
+
+                    <!-- Tabela de Ranking -->
+                    <table class="table ranking-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Posição</th>
+                                <th scope="col">Id do Trader</th>
+                                <th scope="col">Lucros</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Exemplo de linha, substitua conforme necessário -->
+                            <tr>
+                                <td class="bt-none">1º</td>
+                                <td class="bt-none">######0301</td>
+                                <td class="bt-none">R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>2º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>3º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>4º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>5º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>6º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>7º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>8º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>9º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>10º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>11º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>12º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>13º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>14º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                            <tr>
+                                <td>15º</td>
+                                <td>######0301</td>
+                                <td>R$ 6.426,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="./assets/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/lib/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Outras bibliotecas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/javascript/index.js"></script>
+
+</body>
+
+</html>

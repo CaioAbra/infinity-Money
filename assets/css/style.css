@@ -409,6 +409,81 @@ body:not(.home) .badge.badge-secondary {
   overflow-x: hidden;
 }
 
+/* Estilo da tabela */
+.ranking-card {
+  /* Estilos do Header do Ranking */
+}
+.ranking-card .ranking-header {
+  background-color: transparent;
+  padding: 0;
+  text-align: left;
+  border: none;
+}
+.ranking-card .ranking-header .ranking-title {
+  font-family: "Sora-SemiBold";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 0;
+}
+.ranking-card .ranking-header .ranking-subtitle {
+  font-family: "Sora-Light";
+  font-size: 0.875rem;
+  color: #ADADAD;
+}
+.ranking-card .ranking-header .ranking-icon img {
+  width: 32px;
+  /* Tamanho do ícone conforme a imagem */
+  height: 32px;
+}
+
+.ranking-table {
+  width: 100%;
+  margin-top: 20px;
+}
+.ranking-table th,
+.ranking-table td {
+  font-family: "Sora-Regular";
+  font-size: 0.95rem;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #3F3F3F;
+  color: #ADADAD;
+}
+.ranking-table thead th,
+.ranking-table thead tr {
+  border: none;
+}
+.ranking-table th {
+  color: #BDD700;
+  font-family: "Sora-Light";
+  font-weight: 300;
+  font-size: 1rem;
+  border: none;
+}
+.ranking-table td {
+  font-family: "Sora-Regular";
+  color: #ADADAD;
+}
+.ranking-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Leve destaque ao passar o mouse */
+}
+
+.bt-none {
+  border-top: none !important;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .ranking-card {
+    padding: 15px;
+  }
+  .ranking-table th,
+  .ranking-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}
 /* Animação de rotação */
 @keyframes spin {
   0% {
