@@ -311,6 +311,14 @@ body.Upgrade {
   color: #FFFFFF;
   font-family: "Sora-Regular";
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.card .card-currency img.moeda {
+  margin-left: 1rem;
+  width: auto;
+  height: 1.6rem;
 }
 .card .text-time {
   color: #ADADAD;

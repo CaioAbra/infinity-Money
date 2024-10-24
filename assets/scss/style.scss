@@ -92,6 +92,15 @@ body {
         color: $color-text;
         font-family: 'Sora-Regular';
         font-weight: 400;
+        display: flex;
+        align-items: center;
+        align-self: center;
+
+        img.moeda {
+            margin-left: 1rem;
+            width: auto;
+            height: 1.6rem;
+        }
     }
 
     .text-time {
@@ -184,13 +193,14 @@ body:not(.home) {
     margin-top: 6px;
 }
 
-#atlasContainer{
+#atlasContainer {
     position: absolute;
     bottom: 0;
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
 }
+
 
 /* Animação de rotação */
 @keyframes spin {
