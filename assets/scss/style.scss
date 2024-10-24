@@ -97,7 +97,7 @@ body {
         align-self: center;
 
         img.moeda {
-            margin-left: 1rem;
+            margin-left: .5rem;
             width: auto;
             height: 1.6rem;
         }
@@ -279,7 +279,7 @@ body:not(.home) {
     }
 }
 
-.bt-none{
+.bt-none {
     border-top: none !important;
 }
 
@@ -291,8 +291,18 @@ body:not(.home) {
 
     .ranking-table th,
     .ranking-table td {
-        font-size: 0.85rem;
+        // font-size: 0.85rem;
         padding: 8px;
+    }
+
+    .ranking-table {
+        & th {
+            font-size: 12px;
+        }
+
+        & td {
+            font-size: 10px;
+        }
     }
 }
 

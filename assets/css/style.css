@@ -316,7 +316,7 @@ body.Upgrade {
   align-self: center;
 }
 .card .card-currency img.moeda {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   width: auto;
   height: 1.6rem;
 }
@@ -480,8 +480,13 @@ body:not(.home) .badge.badge-secondary {
   }
   .ranking-table th,
   .ranking-table td {
-    font-size: 0.85rem;
     padding: 8px;
+  }
+  .ranking-table th {
+    font-size: 12px;
+  }
+  .ranking-table td {
+    font-size: 10px;
   }
 }
 /* Animação de rotação */
